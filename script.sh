@@ -105,7 +105,7 @@ function fn_log() {
   elif [[ "$#" -eq 1 ]]; then
     logger -i -s -t "${SCRIPTNAME}" -p local0.info "${1}"
   else
-    logger -i -s -t "${SCRIPTNAME}" -p local0.err "${$@}"
+    logger -i -s -t "${SCRIPTNAME}" -p local0.err "$@"
   fi
 }
 
